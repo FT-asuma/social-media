@@ -1,0 +1,83 @@
+.header
+    min-width: 100vw
+    height: 12vh
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    background: var(--primary)
+.headerDivision
+    padding: 0 5rem
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .searchBar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 3.5rem
+        .imgContainer
+            background: #fff
+            border-radius: 0.5rem
+            width: 55px
+            height: 55px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                width: 45px
+                height: 45px
+        .form
+            background: #fff
+            display: flex
+            height: 58px
+            justify-content: space-between
+            align-items: center
+            padding: 1rem 1.5rem
+            border-radius: 0.5em
+            box-shadow: var(--shadow)
+            width: 625px
+            button
+                width: 34px
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 34px
+                background: transparent
+                img
+                    width: 24px
+                    height: 24px
+            input
+                padding: 0
+                border: none
+                outline: none
+                font-size: 1.1rem
+                background: transparent
+                padding: 0 1rem
+    .info, .userProfile
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .userProfile
+            gap: 0.8rem
+            img
+                border-radius: 0.5rem
+                box-shadow: var(--shadow)
+        .settings
+            display: flex
+            gap: 1.2rem
+            margin-left: 3.5rem
+            button
+                width: 55px
+                height: 55px
+                border-radius: 0.5rem
+                display: flex
+                justify-content: center
+                align-items: center
+                background: #fff
+                &:hover
+                    background: #dcf5ff
+                img
+                    width: 32px
+                    height: 32px

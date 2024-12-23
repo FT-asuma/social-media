@@ -1,0 +1,116 @@
+:root,
+html[data-theme="light"]
+  --background: #F1FAFF
+  --foreground: #2e3440
+  --primary: #A9DEF9
+  --primary-hover: #5fa8d3
+  --secondary: #f4a261
+  --secondary-hover: #e76f51
+  --surface: #ffffff
+  --border: #d8dee9
+  --overlay: rgba(0, 0, 0, 0.05)
+  --text-primary: #2e3440
+  --text-secondary: #4c566a
+  --text-on-primary: #ffffff
+  --text-on-secondary: #ffffff
+  --success: #6bcf8f
+  --error: #D90429
+  --warning: #f4d35e
+  --shadow: rgba(0, 0, 0, 0.37) 1.95px 1.95px 2.6px
+  --shadow-full: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px
+  --shadow-full-hover: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+html[data-theme="dark"]
+  --background: #1e293b
+  --foreground: #e5e9f0
+  --primary: #89c2d9
+  --primary-hover: #5fa8d3
+  --secondary: #f4a261
+  --secondary-hover: #e76f51
+  --surface: #2d3748
+  --border: #3b4252
+  --overlay: rgba(255, 255, 255, 0.1)
+  --text-primary: #e5e9f0
+  --text-secondary: #d8dee9
+  --text-on-primary: #ffffff
+  --text-on-secondary: #ffffff
+  --success: #6bcf8f
+  --error: #D90429
+  --warning: #f4d35e
+  --shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px
+  --shadow-full: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px
+  --shadow-full-hover: rgba(255, 255, 255, 0.35) 0px 5px 15px
+
+@media (prefers-color-scheme: dark)
+  :root
+    --background: #1e293b
+    --foreground: #e5e9f0
+    --primary: #89c2d9
+    --primary-hover: #5fa8d3
+    --secondary: #f4a261
+    --secondary-hover: #e76f51
+    --surface: #2d3748
+    --border: #3b4252
+    --overlay: rgba(255, 255, 255, 0.1)
+    --text-primary: #e5e9f0
+    --text-secondary: #d8dee9
+    --text-on-primary: #ffffff
+    --text-on-secondary: #ffffff
+    --success: #6bcf8f
+    --error: #D90429
+    --warning: #f4d35e
+
+html,
+body
+  max-width: 100vw
+  overflow: hidden
+
+body
+  color: var(--foreground)
+  background: var(--background)
+  transition: all 0.3s ease
+  font-family: var(--font-sora)
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+*
+  box-sizing: border-box
+  padding: 0
+  font-family: var(--font-sora)
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  color: var(--text-primary)
+
+p
+  color: var(--text-secondary)
+  line-height: 1.6
+
+a
+  color: var(--primary)
+  text-decoration: none
+  &:hover
+    color: var(--primary-hover)
+
+button
+  background-color: var(--primary)
+  color: var(--text-on-primary)
+  border: none
+  padding: 10px 15px
+  border-radius: 5px
+  cursor: pointer
+  transition: background-color 0.3s
+  &:hover
+    background-color: var(--primary-hover)
+
+button.secondary
+  background-color: var(--secondary)
+  color: var(--text-on-secondary)
+  &:hover
+    background-color: var(--secondary-hover)
+
+input, textarea
+  border: 1px solid var(--border)
+  padding: 10px
+  border-radius: 5px
+  width: 100%

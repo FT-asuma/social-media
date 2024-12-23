@@ -1,0 +1,106 @@
+.productList
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    width: 100%
+    background-color: var(--background)
+    color: var(--text-primary)
+
+.title
+    font-size: 2rem
+    color: var(--text-primary)
+    margin-bottom: 20px
+
+.addButton
+    background-color: var(--primary)
+    color: var(--text-on-primary)
+    padding: 10px 20px
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    transition: background-color 0.3s ease
+
+.addButton:hover
+    background-color: var(--primary-hover)
+
+.productForm
+    display: flex
+    flex-direction: column
+    gap: 10px
+    margin-top: 20px
+    background-color: var(--surface)
+    padding: 20px
+    border-radius: 10px
+    box-shadow: 0 4px 6px var(--overlay)
+    width: 300px
+
+.input
+    padding: 10px
+    border-radius: 5px
+    border: 1px solid var(--border)
+    font-size: 1rem
+    background-color: var(--surface)
+
+.textarea
+    padding: 10px
+    border-radius: 5px
+    border: 1px solid var(--border)
+    font-size: 1rem
+    height: 100px
+    resize: none
+    background-color: var(--surface)
+
+.submitButton
+    background-color: var(--secondary)
+    color: var(--text-on-primary)
+    padding: 10px
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    transition: background-color 0.3s ease
+
+.submitButton:hover
+    background-color: var(--secondary-hover)
+
+.productCards
+    display: flex
+    width: 100%
+    align-items: center
+    flex-wrap: wrap
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    gap: 20px
+    margin-top: 40px
+
+.productCard
+    background-color: var(--surface)
+    border-radius: 10px
+    box-shadow: 0 4px 6px var(--overlay)
+    padding: 20px
+    min-width: 150px
+    max-width: 250px
+    text-align: center
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+    cursor: pointer
+    border: 1px solid var(--border)
+
+.productCard:hover
+    transform: translateY(-10px)
+    box-shadow: 0 8px 15px var(--overlay)
+
+.productTitle
+    font-size: 1.5rem
+    color: var(--text-primary)
+    margin-bottom: 10px
+    font-weight: bold
+
+.productDescription
+    font-size: 1rem
+    color: var(--text-secondary)
+    margin-bottom: 15px
+
+.productPrice
+    font-size: 1.25rem
+    color: var(--primary)
+    font-weight: bold
+    margin-top: 10px
